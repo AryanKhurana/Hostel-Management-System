@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// defining global variables
+
 int i, j, main_exit;
 
 // declaring functions
