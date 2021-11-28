@@ -416,5 +416,5 @@ void erase()
 //function displaying developer credits
 void closer()
 {
-    printf("\n\n\n\nDeveloped by Himanshu Daga\n\n\n");
+    printf("\n\n\n\nDeveloped by Aryan Khurana,Ayush Pattnaik,Azeez Dandawala and Sahil Kachi\n\n\n");
 }
