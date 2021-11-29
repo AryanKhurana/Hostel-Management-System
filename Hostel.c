@@ -49,10 +49,19 @@ int main()
 void menu()
 {
     int choice;
-    printf("\n\n\t\t\tHOSTEL DATA MANAGEMENT SYSTEM");
+   
+  
+        while(1){
+             printf("\n\n\t\t\tHOSTEL DATA MANAGEMENT SYSTEM");
     printf("\n\n\n\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2 WELCOME TO THE MAIN MENU \xB2\xB2\xB2\xB2\xB2\xB2\xB2");
     printf("\n\n\t\t1.Enter new Student's data\n\t\t2.Update information of existing account\n\t\t3.Check the details of existing account\n\t\t4.View all Students of a particlar Hostel\n\t\t5.Removing existing account\n\t\t6.View all students list\n\t\t7.Exit\n\n\n\n\n\t\t Enter your choice:");
     scanf("%d", &choice);
+    if(choice>7){
+        printf("Invalid choice!Try again!");
+        continue;
+        }
+        break;
+    }
 
     switch (choice)
     {
@@ -88,8 +97,16 @@ void menu()
 void sorter()
 {
     int choice, test = 0;
-    printf("Enter year choice:\n\n\t\t1. BH-1 \n\t\t2. BH-2 \n\t\t3. BH-3 \n\t\t4. GH-1 \n\n");
+    
+    while(1){
+        printf("Enter year choice:\n\n\t\t1. BH-1 \n\t\t2. BH-2 \n\t\t3. BH-3 \n\t\t4. GH-1 \n\n");
     scanf("%d", &choice);
+    if(choice>4){
+        printf("Invalid choice!Try again!");
+        continue;
+        }
+        break;
+    }
 
     FILE *fp, *hostel;
     switch (choice)
