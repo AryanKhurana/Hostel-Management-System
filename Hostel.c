@@ -172,9 +172,13 @@ roll_no:
     printf("\nEnter the name:");
     scanf("%s", add.name);
     printf("\nEnter the date of birth(mm/dd/yyyy):");
+    while(true){
     scanf("%d/%d/%d", &add.dob.month, &add.dob.day, &add.dob.year);
     if((add.dob.month>12 || add.dob.month<1)){
         printf("Oh no ! Invalid Month");
+        continue;
+    }
+    break;
     }
     printf("\nEnter the age:");
     scanf("%d", &add.age);
